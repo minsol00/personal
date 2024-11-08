@@ -1,0 +1,102 @@
+section#About{
+ background-color: #eee;
+ padding: 80px 0;
+}
+section#About div.wrap{
+  width: 1200px;
+    
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto auto 59px;
+  row-gap: 68px;
+  column-gap: 50px;
+}
+section#About h2{
+  
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  /*! text-align: center; */
+  font-size: 60px;
+  margin: 0 auto;
+  border-bottom: 2px solid;
+  padding: 0 10px;
+}
+section#About figure{
+  
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  grid-column: 1;
+  grid-row: 2 / span 4;
+  align-items: center;
+}
+section#About div.wrap figure img{
+  
+  width: 500px;
+}
+section#About p.first{
+  
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 25px;
+}
+section#About ul.main{
+  
+  grid-column: 2;
+  grid-row: 3;
+}
+section#About ul.Contact{
+  
+  grid-column: 2;
+  grid-row: 4;
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  background-color: #ccc;
+  padding: 26px;
+  height: 55px;
+  margin: -26px;
+}
+section#About ul.Contact li{
+  
+  width: 50%;
+  line-height: 1.5;
+}
+section#About ul.main li{
+  
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+section#About ul.main li h3{
+  
+  line-height: 1.5;
+  width: calc(100% - 540px);
+  font-size: 26px;
+}
+section#About ul.main li h3 p{
+  
+}
+section#About ul.main li p{
+  
+  content: "";
+  width: 650px;
+  /*! height: 6px; */
+  display: inline-block;
+  /*! background-color: floralwhite; */
+  /*! border-radius: 50%; */
+  vertical-align: 11px;
+  margin-right: -32px;
+}
+section#About ul.Contact li::before{
+  
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background-color: floralwhite;
+  border-radius: 50%;
+  vertical-align: -1px;
+  margin-right: 10px;
+}
